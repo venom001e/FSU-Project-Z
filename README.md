@@ -1,4 +1,4 @@
-# 🎓 FS University (Project Z)
+# 🎓 FS University (Form Generator)
 
 [![GitHub Stars](https://img.shields.io/github/stars/venom001e/FSU-Project-Z?style=flat&color=yellow)](https://github.com/venom001e/FSU-Project-Z/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/venom001e/FSU-Project-Z?style=flat&color=orange)](https://github.com/venom001e/FSU-Project-Z/forks)
