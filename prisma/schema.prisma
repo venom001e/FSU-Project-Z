@@ -88,6 +88,28 @@ model Option {
   answer Answer[]
 }
 
+model Event {
+  id        String   @id @default(uuid())
+  eventId   String   @unique @default(uuid())
+  title     String
+  venue     String
+  date      DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  tickets   Ticket[]
+}
+
+model Ticket {
+  id        String   @id @default(uuid())
+  ticketId  String   @unique @default(uuid())
+  eventId   String
+  event     Event    @relation(fields: [eventId], references: [eventId], onDelete: Cascade)
+  name      String
+  email     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
 model Account {
   id                String   @id @default(cuid())
   userId            String   @map("user_id")
